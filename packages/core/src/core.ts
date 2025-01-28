@@ -34,7 +34,7 @@ export enum ExitCode {
 }
 
 /**
- * Optional properties that can be sent with annotatation commands (notice, error, and warning)
+ * Optional properties that can be sent with annotation commands (notice, error, and warning)
  * See: https://docs.github.com/en/rest/reference/checks#create-a-check-run for more information about annotations.
  */
 export interface AnnotationProperties {
@@ -386,3 +386,8 @@ export {markdownSummary} from './summary'
  * Path exports
  */
 export {toPosixPath, toWin32Path, toPlatformPath} from './path-utils'
+
+/**
+ * Platform utilities exports
+ */
+export * as platform from './platform'
